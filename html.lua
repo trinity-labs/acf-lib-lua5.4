@@ -118,7 +118,6 @@ generic_input = function ( field_type, v )
 		elseif v.name == "password" then
 		str = string.format ( '<input class="%s %s" type="%s" placeholder="🔑 '..mymodule.html_escape(v.label)..'"', mymodule.html_escape(v.class), mymodule.html_escape(field_type), mymodule.html_escape(field_type) )
 		end
-
 	for i,k in ipairs ( {
 			"name", "size", "checked", "maxlength",
 			"value", "length", "id", "src",
