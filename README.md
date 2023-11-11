@@ -4,7 +4,7 @@
 Get package on system via this shell script
 
  ```css
- #!/bin/sh
+#!/bin/sh
 
  PATH=/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/root/bin
  
@@ -19,20 +19,21 @@ Get package on system via this shell script
  git clone https://github.com/trinity-labs/acf-core-lua5.4
  git clone https://github.com/trinity-labs/acf-lib-lua5.4
  git clone https://github.com/trinity-labs/lua5.4-subprocess
+ git clone https://github.com/trinity-labs/dashboard-skin
  
 # build Libs
- cd ./acf-lib-lua5.4
+ cd ~/acf-lib-lua5.4
  make install
  
 # build ACF
- cd ../acf-core-lua5.4
+ cd ~/acf-core-lua5.4
  make install
  
 # build Lua Subprocess
- cd ../lua5.4-subprocess 
+ cd ~/lua5.4-subprocess 
  make clean
  make install
- 
+
 #Done
 exit
   ```
